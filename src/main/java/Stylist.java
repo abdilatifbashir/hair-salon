@@ -24,3 +24,22 @@ public class Stylist{
   public int getId() {
     return id;
   }
+
+   public static Stylist find(int id) {
+       try(Connection con = DB.sql2o.open()) {
+         String sql = "SELECT * FROM stylist where id=:id";
+         Stylist stylist = con.createQuery(sql)
+           .addParameter("id", id)
+           .executeAndFetchFirst(Stylist.class);
+         return stylist;
+       }
+     }
+
+   public List<Client> getClient() {
+     try(Connection con = DB.sql2o.open()) {
+       String sql = "SELECT * FROM client where stylistid=:id";
+       return con.createQuery(sql)
+         .addParameter("id", this.id)
+         .executeAndFetch(Client.class);
+     }
+   }
