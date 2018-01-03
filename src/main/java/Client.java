@@ -10,7 +10,7 @@ public class Client {
   private int id;
   private int stylistId;
 
-  public Task(String name, int stylistId) {
+  public Client(String name, int stylistId) {
     this.description = name;
     completed = false;
     createdAt = LocalDateTime.now();
