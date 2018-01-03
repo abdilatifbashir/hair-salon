@@ -11,7 +11,7 @@ public class Client {
   private int stylistId;
 
   public Client(String name, int stylistId) {
-    this.description = name;
+    this.name = name;
     completed = false;
     createdAt = LocalDateTime.now();
     this.stylistId = stylistId;
