@@ -6,7 +6,7 @@ public class Stylist{
   private String name;
   private int id;
 
-  public stylist(String name) {
+  public Stylist(String name) {
     this.name = name;
   }
 
@@ -43,3 +43,4 @@ public class Stylist{
          .executeAndFetch(Client.class);
      }
    }
+ }
