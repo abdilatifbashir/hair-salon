@@ -61,6 +61,24 @@ post("/clients", (request, response) -> {
       model.put("template", "templates/stylist-client-success.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+    get("/stylists/:stylist_id/clients/:id", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      Stylist stylist = Stylist.find(Integer.parseInt(request.params(":stylist_id")));
+      Client client = Client.find(Integer.parseInt(request.params(":id")));
+      model.put("stylist", stylist);
+      model.put("client", client);
+      model.put("template", "templates/client.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("/clients/:id", (request, response) -> {
+  Map<String, Object> model = new HashMap<String, Object>();
+  Client client= Client.find(Integer.parseInt(request.params(":id")));
+  model.put("client", client);
+  model.put("template", "templates/task.vtl");
+  return new ModelAndView(model, layout);
+}, new VelocityTemplateEngine());
+
 
     }
   }
