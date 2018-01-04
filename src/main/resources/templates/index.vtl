@@ -1,7 +1,11 @@
-<h1>hair salon</h1>
-
-<h2> welcome to huwai salon </h2>
-
+<div class="container">
+<div class="row jumbotron">
+<h1>Hair Salon</h1>
+<hr>
+<h2>Welcome happy customer!</h2>
+</div>
+</div>
+#**
 #if($stylists)
   <p>view clients for the stylist:</p>
   <ul>
@@ -12,6 +16,7 @@
 #else
   <p>you did not created stylist!</p>
 #end
+*#
 
 
 <form action="/stylists" method="post">
