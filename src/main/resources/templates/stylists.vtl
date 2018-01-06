@@ -1,7 +1,9 @@
 <h1>All stylists</h1>
 <ul>
   #foreach ($stylist in $stylists)
-    <li><a href="/stylists/$stylist.getId()">$stylist.getName()</a>---<a href="/stylists/$stylist.getId()/edit">update</a></li>
+    <li><a href="/stylists/$stylist.getId()">$stylist.getName()</a>---<a href="/stylists/$stylist.getId()/edit">update</a>...<form action="/stylists/$stylist.getId()/delete" method="post">
+                <input type="image" src="/images/delete.png" alt="Delete">
+               </form></li>
 
   #end
 </ul>

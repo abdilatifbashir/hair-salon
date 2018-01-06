@@ -44,6 +44,17 @@ public class Stylist{
     }
   }
 
+  public void delete() {
+   try(Connection con = DB.sql2o.open()) {
+   String sql = "DELETE FROM stylists WHERE id = :id;";
+   con.createQuery(sql).addParameter("id", id).executeUpdate();
+   }
+   try(Connection con = DB.sql2o.open()) {
+   String sql = "UPDATE clients SET stylist_id = 0 WHERE stylist_id = :id;";
+   con.createQuery(sql).addParameter("id", id).executeUpdate();
+   }
+ }
+
    public List<Client> getClient() {
      try(Connection con = DB.sql2o.open()) {
        String sql = "SELECT * FROM client where stylistid=:id";
