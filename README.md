@@ -27,5 +27,5 @@
 abdilatif bashir
 
 ## Acknowledgments
-1.My Technical Mentor-Brian Marete .
-2.moringa core  MC6-ANDROID TRACK.
+1. My Technical Mentor-Brian Marete .
+2. moringa core  MC6-ANDROID TRACK.
