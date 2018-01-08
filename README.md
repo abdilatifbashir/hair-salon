@@ -12,6 +12,8 @@
 * spark
 * postgresql
 * bootstrap 4
+* materialize
+* w3 css
 ## Prerequisites
 * Java 8
 * Gradle
