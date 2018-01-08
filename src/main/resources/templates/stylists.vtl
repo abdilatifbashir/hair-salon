@@ -1,10 +1,18 @@
+<div class="row">
+<div class="col-sm-12">
 <h1>All stylists</h1>
-<ul>
+<table class="table table-hover table-responsive table-bordered">
+<tr>
+<td style="padding-right:30%;">Name</td>
+<td  style="padding-right:30%;">Update</td>
+<td  style="padding-right:30%;">Delete</td>
+</tr>
   #foreach ($stylist in $stylists)
-    <li><a href="/stylists/$stylist.getId()">$stylist.getName()</a>---<a href="/stylists/$stylist.getId()/edit">update</a>...<form action="/stylists/$stylist.getId()/delete" method="post">
-                <input type="image" src="/images/delete.png" alt="Delete">
-               </form></li>
+    <tr><td><a href="/stylists/$stylist.getId()">$stylist.getName()</a></td>
+    <td  style="padding-right:30%;"><a href="/stylists/$stylist.getId()/edit"><i class="fa fa-pencil"></i></td>
+    <td  style="padding-right:30%;"><i class="fa fa-trash"></i></td></tr>
 
   #end
-</ul>
 <a href="/stylists/new">Add New stylist</a>
+</div>
+</div>

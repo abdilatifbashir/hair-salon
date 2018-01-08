@@ -1,4 +1,5 @@
-## this is java-spark application that teaches one-to-many relationship in relational database using postgresql.
+## this is java-spark application that teaches one-to-many relationship in relational database using postgresql,it is hair salon application.
+
 
 ## specification of the App
 1. it can add new stylist

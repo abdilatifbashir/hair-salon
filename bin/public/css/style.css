@@ -1,0 +1,147 @@
+  /*=====================================================================
+	css for Contact area
+=======================================================================*/
+.contact_area {
+  padding-bottom: 171px;
+}
+.contact_a_title{
+	text-align:center;
+	margin-bottom:45px;
+}
+.contact_a_title h2{
+	font-family: 'asapregular';
+	color:#202020;
+	font-size:30px;
+	line-height:40px;
+	margin-top:0;
+	margin-bottom:25px;
+}
+.contact_a_title h2 span{
+	font-family: 'asapbold';
+	color:#2EC06C;
+}
+.contact_a_title p{
+	color:#FFFFFF;
+	font-family: 'karlaregular';
+	font-size:16px;
+	margin:0 15% 15px;
+}
+.single_social a {
+  border: 1px solid;
+  border-radius: 5px;
+  display: block;
+  font-size: 60px;
+  height: 180px;
+  margin-bottom: 35px;
+  padding-top: 25%;
+  text-align: center;
+}
+.facebook{
+	border-color:#3b5998;
+	color:#3b5998;
+	
+}
+.facebook:hover{
+	color:#fff;
+	border-color:#3b5998;
+}
+.fb_link .hvr-bounce-to-bottom:before {
+  background: #3b5998 none repeat scroll 0 0;
+}
+.twitter{
+	border-color:#00aced;
+	color:#00aced;
+}
+.twitter:hover{
+	border-color:#00aced;
+	color:#fff;
+}
+.tw_link .hvr-bounce-to-bottom:before {
+  background: #00aced none repeat scroll 0 0;
+}
+.instagram{
+	border-color:#517fa4;
+	color:#517fa4;
+}
+.instagram:hover{
+	border-color:#517fa4;
+	color:#fff;
+}
+.int_link .hvr-bounce-to-bottom:before {
+  background: #517fa4 none repeat scroll 0 0;
+}
+.dribbble{
+	border-color:#ff0084;
+	color:#ff0084;
+}
+.dribbble:hover{
+	border-color:#ff0084;
+	color:#fff;
+}
+.dri_link .hvr-bounce-to-bottom:before {
+  background: #ff0084 none repeat scroll 0 0;
+}
+
+.contact_box textarea {
+    color: #666666;
+}
+
+.contact_box label {
+  
+  
+}
+.massage_a{
+	position:relative;
+}
+.massage_s {
+  background: #2ec06c none repeat scroll 0 0;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  height: 100%;
+  padding-left: 15px;
+  padding-top: 102px;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  width: 50px;
+  z-index: 2;
+}
+.massage_s i{
+color:#fff;
+
+}
+
+/*=====================================================================
+ *<p><img style src="img/slider-img-5.jpg" style="width:10%;height:10%;" class="img-circle"></p>
+      <p class="white-text">Since I started Shopping At Agip Communications,<br>
+	  I have been getting durable and classic smartphones at a friendly price<br>
+	  Thanks Agip
+	  </p>
+  
+ /*=====================================================================
+	css for Footer area
+============F===========================================================*/
+.footer_area {
+  background: #eeeeee none repeat scroll 0 0;
+  margin: 0;
+  padding: 15px;
+}
+.footer_area p{
+	font-family: 'asapitalic';
+	font-size:16px;
+	color:#2f2f2f;
+	margin:0;
+    
+}
+.footer_area p a{
+	font-family: 'asapbold';
+	color:#2ec06c;
+}
+.footer_area p a:hover{
+	text-decoration:none;
+}
+.main-bg{}
+.fa-paper-plane{}
+

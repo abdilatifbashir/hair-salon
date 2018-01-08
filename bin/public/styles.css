@@ -1,8 +1,9 @@
-#text-align{
-  text-align:center;
-
-}
-.relative-position{
-  position: relative;
-  left:50px;
+section
+{
+  background: #FFFFFF;
+  transform: translate3d(-50%,-50%);
+  padding:40px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0,0,0,2);
+  border: 1px solid rgba(0,0,0,1);
 }
