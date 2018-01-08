@@ -11,9 +11,10 @@ public class DB {
   private static URI dbUri;
     public static Sql2o sql2o;
 
-    Logger logger = LoggerFactory.getLogger(DB.class);
 
     static {
+
+          Logger logger = LoggerFactory.getLogger(DB.class);
 
         try {
             if (System.getenv("DATABASE_URL") == null) {
